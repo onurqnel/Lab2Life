@@ -2,8 +2,8 @@ import { nodes as defaultNodes, Tag } from '@markdoc/markdoc'
 import { slugifyWithCounter } from '@sindresorhus/slugify'
 import yaml from 'js-yaml'
 
-import { DocsLayout } from '@/components/syntax/DocsLayout'
-import { Fence } from '@/components/syntax/Fence'
+import { DocsLayout } from '@/components/docs/DocsLayout'
+import { Fence } from '@/components/docs/Fence'
 
 let documentSlugifyMap = new Map()
 

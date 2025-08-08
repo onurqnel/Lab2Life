@@ -1,5 +1,5 @@
-import { Callout } from '@/components/syntax/Callout'
-import { QuickLink, QuickLinks } from '@/components/syntax/QuickLinks'
+import { Callout } from '@/components/docs/Callout'
+import { QuickLink, QuickLinks } from '@/components/docs/QuickLinks'
 
 const tags = {
   callout: {

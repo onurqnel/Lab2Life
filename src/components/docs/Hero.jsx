@@ -3,8 +3,8 @@ import Image from 'next/image'
 import clsx from 'clsx'
 import { Highlight } from 'prism-react-renderer'
 
-import { Button } from '@/components/common/Button'
-import { HeroBackground } from '@/components/syntax/HeroBackground'
+import { Button } from '@/components/docs/Button'
+import { HeroBackground } from '@/components/docs/HeroBackground'
 import blurCyanImage from '@/assets/syntax/images/blur-cyan.png'
 import blurIndigoImage from '@/assets/syntax/images/blur-indigo.png'
 

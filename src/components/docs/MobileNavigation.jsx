@@ -5,8 +5,8 @@ import Link from 'next/link'
 import { usePathname, useSearchParams } from 'next/navigation'
 import { Dialog, DialogPanel } from '@headlessui/react'
 
-import { Logomark } from '@/components/syntax/Logo'
-import { Navigation } from '@/components/syntax/Navigation'
+import { Logomark } from '@/components/docs/Logo'
+import { Navigation } from '@/components/docs/Navigation'
 
 function MenuIcon(props) {
   return (

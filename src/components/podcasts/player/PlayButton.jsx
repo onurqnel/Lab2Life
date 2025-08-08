@@ -1,5 +1,5 @@
-import { PauseIcon } from '@/components/transmit/PauseIcon'
-import { PlayIcon } from '@/components/transmit/PlayIcon'
+import { PauseIcon } from '@/components/podcasts/PauseIcon'
+import { PlayIcon } from '@/components/podcasts/PlayIcon'
 
 export function PlayButton({ player }) {
   let Icon = player.playing ? PauseIcon : PlayIcon

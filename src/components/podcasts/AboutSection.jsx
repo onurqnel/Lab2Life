@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import clsx from 'clsx'
 
-import { TinyWaveFormIcon } from '@/components/transmit/TinyWaveFormIcon'
+import { TinyWaveFormIcon } from '@/components/podcasts/TinyWaveFormIcon'
 
 export function AboutSection(props) {
   let [isExpanded, setIsExpanded] = useState(false)

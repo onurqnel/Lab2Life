@@ -2,10 +2,10 @@ import { cache } from 'react'
 import { notFound } from 'next/navigation'
 
 import { Container } from '@/components/common/Container'
-import { EpisodePlayButton } from '@/components/transmit/EpisodePlayButton'
-import { FormattedDate } from '@/components/transmit/FormattedDate'
-import { PauseIcon } from '@/components/transmit/PauseIcon'
-import { PlayIcon } from '@/components/transmit/PlayIcon'
+import { EpisodePlayButton } from '@/components/podcasts/EpisodePlayButton'
+import { FormattedDate } from '@/components/podcasts/FormattedDate'
+import { PauseIcon } from '@/components/podcasts/PauseIcon'
+import { PlayIcon } from '@/components/podcasts/PlayIcon'
 import { getAllEpisodes } from '@/lib/transmit/episodes'
 
 const getEpisode = cache(async (id) => {

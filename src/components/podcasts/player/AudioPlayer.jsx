@@ -3,13 +3,13 @@
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 
-import { useAudioPlayer } from '@/components/transmit/AudioProvider'
-import { ForwardButton } from '@/components/transmit/player/ForwardButton'
-import { MuteButton } from '@/components/transmit/player/MuteButton'
-import { PlaybackRateButton } from '@/components/transmit/player/PlaybackRateButton'
-import { PlayButton } from '@/components/transmit/player/PlayButton'
-import { RewindButton } from '@/components/transmit/player/RewindButton'
-import { Slider } from '@/components/transmit/player/Slider'
+import { useAudioPlayer } from '@/components/podcasts/AudioProvider'
+import { ForwardButton } from '@/components/podcasts/player/ForwardButton'
+import { MuteButton } from '@/components/podcasts/player/MuteButton'
+import { PlaybackRateButton } from '@/components/podcasts/player/PlaybackRateButton'
+import { PlayButton } from '@/components/podcasts/player/PlayButton'
+import { RewindButton } from '@/components/podcasts/player/RewindButton'
+import { Slider } from '@/components/podcasts/player/Slider'
 
 function parseTime(seconds) {
   let hours = Math.floor(seconds / 3600)

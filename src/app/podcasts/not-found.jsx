@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { Waveform } from '@/components/transmit/Waveform'
+import { Waveform } from '@/components/podcasts/Waveform'
 
 export default function NotFound() {
   return (

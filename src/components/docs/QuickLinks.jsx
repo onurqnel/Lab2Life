@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { Icon } from '@/components/syntax/Icon'
+import { Icon } from '@/components/docs/Icon'
 
 export function QuickLinks({ children }) {
   return (

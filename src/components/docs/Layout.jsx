@@ -5,12 +5,12 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 
-import { Hero } from '@/components/syntax/Hero'
-import { Logo, Logomark } from '@/components/syntax/Logo'
-import { MobileNavigation } from '@/components/syntax/MobileNavigation'
-import { Navigation } from '@/components/syntax/Navigation'
-import { Search } from '@/components/syntax/Search'
-import { ThemeSelector } from '@/components/syntax/ThemeSelector'
+import { Hero } from '@/components/docs/Hero'
+import { Logo, Logomark } from '@/components/docs/Logo'
+import { MobileNavigation } from '@/components/docs/MobileNavigation'
+import { Navigation } from '@/components/docs/Navigation'
+import { Search } from '@/components/docs/Search'
+import { ThemeSelector } from '@/components/docs/ThemeSelector'
 
 function GitHubIcon(props) {
   return (

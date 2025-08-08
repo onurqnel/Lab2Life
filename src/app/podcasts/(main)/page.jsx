@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-import { Container } from '@/components/common/Container'
-import { EpisodePlayButton } from '@/components/transmit/EpisodePlayButton'
-import { FormattedDate } from '@/components/transmit/FormattedDate'
+import { Container } from '@/components/podcasts/Container'
+import { EpisodePlayButton } from '@/components/podcasts/EpisodePlayButton'
+import { FormattedDate } from '@/components/podcasts/FormattedDate'
 import { getAllEpisodes } from '@/lib/transmit/episodes'
 
 function PauseIcon(props) {

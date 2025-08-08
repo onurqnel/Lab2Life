@@ -1,6 +1,6 @@
 'use client'
 
-import { useAudioPlayer } from '@/components/transmit/AudioProvider'
+import { useAudioPlayer } from '@/components/podcasts/AudioProvider'
 
 export function EpisodePlayButton({ episode, playing, paused, ...props }) {
   let player = useAudioPlayer(episode)

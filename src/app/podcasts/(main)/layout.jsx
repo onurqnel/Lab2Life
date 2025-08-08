@@ -2,11 +2,11 @@ import { Fragment } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { AboutSection } from '@/components/transmit/AboutSection'
-import { AudioProvider } from '@/components/transmit/AudioProvider'
-import { AudioPlayer } from '@/components/transmit/player/AudioPlayer'
-import { TinyWaveFormIcon } from '@/components/transmit/TinyWaveFormIcon'
-import { Waveform } from '@/components/transmit/Waveform'
+import { AboutSection } from '@/components/podcasts/AboutSection'
+import { AudioProvider } from '@/components/podcasts/AudioProvider'
+import { AudioPlayer } from '@/components/podcasts/player/AudioPlayer'
+import { TinyWaveFormIcon } from '@/components/podcasts/TinyWaveFormIcon'
+import { Waveform } from '@/components/podcasts/Waveform'
 import posterImage from '@/assets/transmit/images/poster.png'
 
 function SpotifyIcon(props) {
