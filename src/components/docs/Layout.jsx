@@ -47,7 +47,7 @@ function Header() {
         <MobileNavigation />
       </div>
       <div className="relative flex grow basis-0 items-center">
-        <Link href="/syntax" aria-label="Home page">
+        <Link href="/docs" aria-label="Home page">
           <Logomark className="h-9 w-9 lg:hidden" />
           <Logo className="hidden h-9 w-auto fill-slate-700 lg:block dark:fill-sky-100" />
         </Link>
@@ -67,7 +67,7 @@ function Header() {
 
 export function Layout({ children }) {
   let pathname = usePathname()
-  let isHomePage = pathname === '/syntax'
+  let isHomePage = pathname === '/docs'
 
   return (
     <div className="flex w-full flex-col">
