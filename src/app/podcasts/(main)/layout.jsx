@@ -7,7 +7,7 @@ import { AudioProvider } from '@/components/podcasts/AudioProvider'
 import { AudioPlayer } from '@/components/podcasts/player/AudioPlayer'
 import { TinyWaveFormIcon } from '@/components/podcasts/TinyWaveFormIcon'
 import { Waveform } from '@/components/podcasts/Waveform'
-import posterImage from '@/assets/transmit/images/poster.png'
+import posterImage from '@/assets/podcasts/images/poster.png'
 
 function SpotifyIcon(props) {
   return (

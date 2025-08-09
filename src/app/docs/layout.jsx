@@ -15,7 +15,7 @@ const inter = Inter({
 
 // Use local version of Lexend so that we can use OpenType features
 const lexend = localFont({
-  src: '../../assets/syntax/fonts/lexend.woff2',
+  src: '../../assets/docs/fonts/lexend.woff2',
   display: 'swap',
   variable: '--font-lexend',
 })
