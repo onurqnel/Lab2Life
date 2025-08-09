@@ -1,5 +1,5 @@
 import '@/styles/tailwind.css'
-import '@/styles/transmit/tailwind.css'
+import '@/styles/podcasts/tailwind.css'
 
 export const metadata = {
   title: {

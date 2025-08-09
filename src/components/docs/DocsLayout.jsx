@@ -2,7 +2,7 @@ import { DocsHeader } from '@/components/docs/DocsHeader'
 import { PrevNextLinks } from '@/components/docs/PrevNextLinks'
 import { Prose } from '@/components/docs/Prose'
 import { TableOfContents } from '@/components/docs/TableOfContents'
-import { collectSections } from '@/lib/syntax/sections'
+import { collectSections } from '@/lib/docs/sections'
 
 export function DocsLayout({ children, frontmatter: { title }, nodes }) {
   let tableOfContents = collectSections(nodes)

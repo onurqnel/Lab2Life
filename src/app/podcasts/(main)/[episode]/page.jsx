@@ -1,12 +1,12 @@
 import { cache } from 'react'
 import { notFound } from 'next/navigation'
 
-import { Container } from '@/components/common/Container'
+import { Container } from '@/components/podcasts/Container'
 import { EpisodePlayButton } from '@/components/podcasts/EpisodePlayButton'
 import { FormattedDate } from '@/components/podcasts/FormattedDate'
 import { PauseIcon } from '@/components/podcasts/PauseIcon'
 import { PlayIcon } from '@/components/podcasts/PlayIcon'
-import { getAllEpisodes } from '@/lib/transmit/episodes'
+import { getAllEpisodes } from '@/lib/podcasts/episodes'
 
 const getEpisode = cache(async (id) => {
   let allEpisodes = await getAllEpisodes()

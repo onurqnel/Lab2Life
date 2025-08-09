@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Container } from '@/components/podcasts/Container'
 import { EpisodePlayButton } from '@/components/podcasts/EpisodePlayButton'
 import { FormattedDate } from '@/components/podcasts/FormattedDate'
-import { getAllEpisodes } from '@/lib/transmit/episodes'
+import { getAllEpisodes } from '@/lib/podcasts/episodes'
 
 function PauseIcon(props) {
   return (
@@ -72,7 +72,7 @@ function EpisodeEntry({ episode }) {
               /
             </span>
             <Link
-              href={`/transmit/${episode.id}`}
+              href={`/podcasts/${episode.id}`}
               className="flex items-center text-sm/6 font-bold text-pink-500 hover:text-pink-700 active:text-pink-900"
               aria-label={`Show notes for episode ${episode.title}`}
             >
