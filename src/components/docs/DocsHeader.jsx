@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 
-import { navigation } from '@/lib/syntax/navigation'
+import { navigation } from '@/lib/docs/navigation'
 
 export function DocsHeader({ title }) {
   let pathname = usePathname()

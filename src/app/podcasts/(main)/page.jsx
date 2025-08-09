@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Container } from '@/components/podcasts/Container'
 import { EpisodePlayButton } from '@/components/podcasts/EpisodePlayButton'
 import { FormattedDate } from '@/components/podcasts/FormattedDate'
-import { getAllEpisodes } from '@/lib/transmit/episodes'
+import { getAllEpisodes } from '@/lib/podcasts/episodes'
 
 function PauseIcon(props) {
   return (

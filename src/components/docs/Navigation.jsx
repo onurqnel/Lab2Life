@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 
-import { navigation } from '@/lib/syntax/navigation'
+import { navigation } from '@/lib/docs/navigation'
 
 export function Navigation({ className, onLinkClick }) {
   let pathname = usePathname()
