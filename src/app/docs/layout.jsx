@@ -1,34 +1,24 @@
-import localFontInter from 'next/font/local'
-import localFontLexend from 'next/font/local'
-import clsx from 'clsx'
+import localFontInter from 'next/font/local' // https://fonts.google.com/specimen/Inter
+import localFontLexend from 'next/font/local' // https://fonts.google.com/specimen/Lexend
+import clsx from 'clsx' // Conditional rendering library for CSS
 
-import { Providers } from './providers'
+import { Providers } from './theme-provider' // Dark-light mode
 import { Layout } from '@/components/docs/Layout'
 
 import '@/styles/tailwind.css'
 
-// Use local version of Inter so that we can use OpenType features
+// Use local version of the fonts so we can use OpenType features
 const inter = localFontInter({
   src: '../../assets/docs/fonts/Inter.woff2',
   display: 'swap',
   variable: '--font-inter',
 })
 
-// Use local version of Lexend so that we can use OpenType features
 const lexend = localFontLexend({
   src: '../../assets/docs/fonts/lexend.woff2',
   display: 'swap',
   variable: '--font-lexend',
 })
-
-export const metadata = {
-  title: {
-    template: '%s - Docs',
-    default: 'CacheAdvance - Never miss the cache again.',
-  },
-  description:
-    'Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.',
-}
 
 export default function LayoutWrapper({ children }) {
   return (
