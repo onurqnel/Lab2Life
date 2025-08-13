@@ -1,5 +1,5 @@
-import { Inter } from 'next/font/google'
-import localFont from 'next/font/local'
+import localFontInter from 'next/font/local'
+import localFontLexend from 'next/font/local'
 import clsx from 'clsx'
 
 import { Providers } from './providers'
@@ -7,14 +7,15 @@ import { Layout } from '@/components/docs/Layout'
 
 import '@/styles/tailwind.css'
 
-const inter = Inter({
-  subsets: ['latin'],
+// Use local version of Inter so that we can use OpenType features
+const inter = localFontInter({
+  src: '../../assets/docs/fonts/Inter.woff2',
   display: 'swap',
   variable: '--font-inter',
 })
 
 // Use local version of Lexend so that we can use OpenType features
-const lexend = localFont({
+const lexend = localFontLexend({
   src: '../../assets/docs/fonts/lexend.woff2',
   display: 'swap',
   variable: '--font-lexend',
@@ -31,13 +32,7 @@ export const metadata = {
 
 export default function LayoutWrapper({ children }) {
   return (
-    <div
-      className={clsx(
-        'min-h-full bg-white dark:bg-slate-900',
-        inter.variable,
-        lexend.variable,
-      )}
-    >
+    <div className={clsx('min-h-full bg-white dark:bg-slate-900', inter.variable, lexend.variable)}>
       <Providers>
         <Layout>{children}</Layout>
       </Providers>

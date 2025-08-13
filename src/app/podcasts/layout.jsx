@@ -6,7 +6,7 @@ export const metadata = {
     template: '%s - Their Side',
     default:
       'Their Side - Conversations with the most tragically misunderstood people of our time',
-  },
+  }, 
   description:
     'Conversations with the most tragically misunderstood people of our time.',
 }
