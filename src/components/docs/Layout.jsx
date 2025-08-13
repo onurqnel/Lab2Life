@@ -20,9 +20,6 @@ function GoBackIcon(props) { // Modifiable icon with props
   )
 }
 
-
-
-
 function Header() {
   let [isScrolled, setIsScrolled] = useState(false)
 
@@ -50,9 +47,11 @@ function Header() {
         <MobileNavigation />
       </div>
       <div className="relative flex grow basis-0 items-center">
-      {/*<Link href="/docs" aria-label="Home page">
-            <Logo className="hidden h-9 w-auto fill-slate-700 lg:block dark:fill-sky-100" />
-          </Link>*/}
+      {/*
+      <Link href="/docs" aria-label="Home page">
+        <Logo className="hidden h-9 w-auto fill-slate-700 lg:block dark:fill-sky-100" />
+      </Link>
+      \*/}
       </div>
       <div className="-my-5 mr-6 sm:mr-8 md:mr-0 items-center">
         <Search />
@@ -69,14 +68,11 @@ function Header() {
 
 export function Layout({ children }) {
   let pathname = usePathname()
-  let isHomePage = pathname === '/docs'
-
+  let isDocsPage = pathname === '/docs'
   return (
     <div className="flex w-full flex-col">
       <Header />
-
-      {isHomePage && <Hero />}
-
+      {isDocsPage && <Hero />}
       <div className="relative mx-auto flex w-full max-w-8xl flex-auto justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />

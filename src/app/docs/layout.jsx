@@ -5,7 +5,7 @@ import clsx from 'clsx' // Conditional rendering library for CSS
 import { Providers } from './theme-provider' // Dark-light mode
 import { Layout } from '@/components/docs/Layout'
 
-import '@/styles/tailwind.css'
+import '@/styles/docs/tailwind.css'
 
 // Use local version of the fonts so we can use OpenType features
 const inter = localFontInter({
