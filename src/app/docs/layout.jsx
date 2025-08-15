@@ -1,31 +1,30 @@
-import localFontInter from 'next/font/local' // https://fonts.google.com/specimen/Inter
-import localFontLexend from 'next/font/local' // https://fonts.google.com/specimen/Lexend
-import clsx from 'clsx' // Conditional rendering library for CSS
-
-import { Providers } from './theme-provider' // Dark-light mode
+import localFont from 'next/font/local'
+import clsx from 'clsx'
+import { Providers } from './theme-provider'
 import { Layout } from '@/components/docs/Layout'
 
-import '@/styles/docs/tailwind.css'
-
-// Use local version of the fonts so we can use OpenType features
-const inter = localFontInter({
-  src: '../../assets/docs/fonts/Inter.woff2',
-  display: 'swap',
+const inter = localFont({
+  src: [{ path: '../../assets/docs/fonts/inter.woff2', weight: '100 900', style: 'normal' }],
   variable: '--font-inter',
-})
-
-const lexend = localFontLexend({
-  src: '../../assets/docs/fonts/lexend.woff2',
   display: 'swap',
-  variable: '--font-lexend',
+  preload: true,
 })
 
+const lexend = localFont({
+  src: [{ path: '../../assets/docs/fonts/Lexend-Var-subset.woff2', weight: '100 900', style: 'normal' }],
+  variable: '--font-lexend',
+  display: 'swap',
+  preload: true,
+})
 export default function LayoutWrapper({ children }) {
   return (
-    <div className={clsx('min-h-full bg-white dark:bg-slate-900', inter.variable, lexend.variable)}>
+    <section
+      data-app="docs"
+      className={clsx('min-h-full bg-white dark:bg-slate-900', inter.variable, lexend.variable)}
+    >
       <Providers>
         <Layout>{children}</Layout>
       </Providers>
-    </div>
+    </section>
   )
 }
