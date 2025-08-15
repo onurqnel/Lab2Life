@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-
 @plugin '@tailwindcss/typography';
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -33,8 +32,12 @@
   --text-9xl: 8rem;
   --text-9xl--line-height: 1;
 
-  --font-sans: var(--font-inter), Satoshi, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-display: var(--font-lexend);
+  --font-system:
+    ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+
+  --font-sans: var(--font-system);
+  --font-display: var(--font-lexend, var(--font-sans));
   --font-display--font-feature-settings: 'ss01';
 
   --container-8xl: 88rem;
@@ -44,4 +47,13 @@
   [inert] ::-webkit-scrollbar {
     display: none;
   }
+}
+
+[data-app='docs'] {
+  --font-sans: var(--font-inter), var(--font-system);
+  --font-display: var(--font-lexend);
+}
+
+[data-app='podcasts'] {
+  --font-sans: var(--font-satoshi), var(--font-system);
 }
